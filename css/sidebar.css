@@ -1,83 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  background-color: rgb(245, 245, 245);
-  overflow-y: scroll;
-  min-height: 100vh;
-}
-
-.cabeza {
-  background-color: rgb(245, 245, 245);
-  width: 100%;
-  position: sticky;
-  top: 0;
-}
-.cabeza .barrita {
-  padding: 1% 5% 1% 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.cabeza .barrita .contBarr {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-.cabeza .barrita .contBarr .Logo {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 10px;
-}
-.cabeza .barrita .contBarr .Logo .Busqueda {
-  width: 400px;
-  height: 40px;
-  border-radius: 50px;
-  border: 1px solid gainsboro;
-  font-size: 15px;
-  padding-left: 5%;
-}
-.cabeza .barrita .contBarr .Logo .Busqueda:hover {
-  border: 1.5px solid rgb(189, 189, 189);
-}
-.cabeza .barrita .contBarr .account {
-  margin-left: 50%;
-  margin-right: 5%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  align-items: end;
-  gap: 20px;
-}
-.cabeza .barrita .contBarr .account .Create {
-  text-align: center;
-  width: 150px;
-  text-decoration: none;
-  border: 1px solid blueviolet;
-  padding: 15px 15px 15px 15px;
-  border-radius: 50px;
-}
-.cabeza .barrita .contBarr .account .Create:hover {
-  background-color: blueviolet;
-  color: white;
-  text-decoration: underline;
-}
-.cabeza .barrita .contBarr .account .logIn {
-  text-align: center;
-  width: 150px;
-  text-decoration: none;
-  padding: 15px 15px 15px 15px;
-  border-radius: 40px;
-}
-.cabeza .barrita .contBarr .account .logIn:hover {
-  background-color: rgb(246, 239, 250);
-  text-decoration: underline;
-}
-
 .navBarr {
   width: 300px;
   min-height: 100vh;
@@ -234,4 +154,4 @@ body {
 }
 .navBarr .finalInfo a {
   text-decoration: none;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=sidebar.css.map */
