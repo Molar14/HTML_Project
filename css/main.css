@@ -1,17 +1,11 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: roboto;
-}
-
 .cabeza {
+  background-color: rgb(245, 245, 245);
   width: 100%;
   position: sticky;
-  height: 10%;
+  top: 0;
 }
 .cabeza .barrita {
-  margin-left: 2%;
-  margin-top: 15px;
+  padding: 1% 5% 1% 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,12 +24,214 @@
 .cabeza .barrita .contBarr .Logo .Busqueda {
   width: 400px;
   height: 40px;
-  border-radius: 0.375em;
+  border-radius: 50px;
+  border: 1px solid gainsboro;
+  font-size: 15px;
+  padding-left: 5%;
+}
+.cabeza .barrita .contBarr .Logo .Busqueda:hover {
+  border: 1.5px solid rgb(189, 189, 189);
 }
 .cabeza .barrita .contBarr .account {
   margin-left: 50%;
+  margin-right: 5%;
   display: flex;
   align-items: center;
   flex-direction: row;
   align-items: end;
+  gap: 20px;
+}
+.cabeza .barrita .contBarr .account .Create {
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  border: 1px solid blueviolet;
+  padding: 15px 15px 15px 15px;
+  border-radius: 50px;
+}
+.cabeza .barrita .contBarr .account .Create:hover {
+  background-color: blueviolet;
+  color: white;
+  text-decoration: underline;
+}
+.cabeza .barrita .contBarr .account .logIn {
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  padding: 15px 15px 15px 15px;
+  border-radius: 40px;
+}
+.cabeza .barrita .contBarr .account .logIn:hover {
+  background-color: rgb(246, 239, 250);
+  text-decoration: underline;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+  overflow-y: scroll;
+  min-height: 100vh;
+}
+
+.navBarr {
+  width: 300px;
+  min-height: 100vh;
+}
+.navBarr .info {
+  line-height: 30px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  background-color: white;
+  padding: 30px;
+}
+.navBarr .info p {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.navBarr .info .Botones {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.navBarr .info .Botones .Create {
+  width: 100%;
+  text-decoration: none;
+  border: 1px solid blueviolet;
+  padding: 10px;
+  border-radius: 50px;
+}
+.navBarr .info .Botones .Create:hover {
+  background-color: blueviolet;
+  color: white;
+  text-decoration: underline;
+}
+.navBarr .info .Botones .logIn {
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 40px;
+}
+.navBarr .info .Botones .logIn:hover {
+  background-color: rgb(252, 253, 255);
+  text-decoration: underline;
+}
+.navBarr .tags {
+  list-style: none;
+  padding: 10px 5px 5px 10px;
+  width: 100%;
+}
+.navBarr .tags .secciones {
+  list-style: none;
+  width: 95%;
+}
+.navBarr .tags .secciones .Botones {
+  background-color: rgb(245, 245, 245);
+  font-size: 18px;
+  border: none;
+  text-align: start;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navBarr .tags .secciones .Botones:hover {
+  background-color: rgb(239, 231, 255);
+  text-decoration: underline;
+}
+.navBarr h3 {
+  padding: 5px;
+}
+.navBarr .tags2 {
+  list-style: none;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 50px;
+  width: 100%;
+}
+.navBarr .tags2 .secciones {
+  list-style: none;
+  width: 95%;
+}
+.navBarr .tags2 .secciones .Botones {
+  background-color: rgb(245, 245, 245);
+  font-size: 18px;
+  border: none;
+  text-align: start;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navBarr .tags2 .secciones .Botones:hover {
+  background-color: rgb(239, 231, 255);
+  text-decoration: underline;
+}
+.navBarr .socialMedia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navBarr .socialMedia .Redes {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+}
+.navBarr .socialMedia .Redes .links {
+  background-color: rgb(245, 245, 245);
+  font-size: 18px;
+  border: none;
+  text-align: start;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navBarr .socialMedia .Redes .links:hover {
+  background-color: rgb(239, 231, 255);
+  text-decoration: underline;
+}
+.navBarr .popTags {
+  height: 430px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.navBarr .popTags .Botones {
+  background-color: rgb(245, 245, 245);
+  font-size: 18px;
+  border: none;
+  text-align: start;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navBarr .popTags .Botones:hover {
+  background-color: rgb(239, 231, 255);
+  text-decoration: underline;
+}
+.navBarr .finalInfo {
+  text-align: justify;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 15px;
+}
+.navBarr .finalInfo a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
