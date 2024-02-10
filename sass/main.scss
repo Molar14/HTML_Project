@@ -1,0 +1,43 @@
+@mixin Center(){
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+}
+.cabeza{
+    width: 100%;
+    position: sticky;
+    height: 10%;
+    .barrita{
+        margin-left: 2%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .contBarr{
+            @include Center();
+            .Logo{
+                @include Center();
+                gap: 10px;
+                .Busqueda{
+                    width: 400px;
+                    height: 40px;
+                    border-radius: 0.375em;
+                }
+            }
+            .account{
+                margin-left: 50%;
+                @include Center();
+                align-items: end;
+                .Create{
+                    
+                }
+            }
+        }
+    }
+}

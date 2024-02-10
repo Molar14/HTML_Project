@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: roboto;
+}
+
+.cabeza {
+  width: 100%;
+  position: sticky;
+  height: 10%;
+}
+.cabeza .barrita {
+  margin-left: 2%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cabeza .barrita .contBarr {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.cabeza .barrita .contBarr .Logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.cabeza .barrita .contBarr .Logo .Busqueda {
+  width: 400px;
+  height: 40px;
+  border-radius: 0.375em;
+}
+.cabeza .barrita .contBarr .account {
+  margin-left: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: end;
+}/*# sourceMappingURL=main.css.map */
