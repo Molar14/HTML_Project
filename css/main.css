@@ -10,6 +10,12 @@ body {
   min-height: 100vh;
 }
 
+.row {
+  border: solid rgb(58, 24, 124) 1px;
+  display: flex;
+  flex-direction: row;
+}
+
 .cabeza {
   background-color: rgb(245, 245, 245);
   width: 100%;
@@ -234,4 +240,49 @@ body {
 }
 .navBarr .finalInfo a {
   text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.subContResourcesSD {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-items: flex-end;
+  justify-content: center;
+}
+.subContResourcesSD .titleResourcesSD {
+  margin-top: 20px;
+  margin-bottom: -20px;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.resourcesSD {
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(64, 64, 64);
+}
+
+.resourcesSD:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(86, 95, 188);
+}
+
+.titleResourcesSD {
+  width: 90%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  justify-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
