@@ -11,12 +11,14 @@ body {
 }
 
 .cabeza {
-  background-color: rgb(245, 245, 245);
+  background-color: white;
+  border: 1px solid gainsboro;
   width: 100%;
   position: sticky;
   top: 0;
 }
 .cabeza .barrita {
+  position: relative;
   padding: 1% 5% 1% 5%;
   display: flex;
   flex-direction: column;
@@ -132,6 +134,7 @@ body {
   width: 95%;
 }
 .navBarr .tags .secciones .Botones {
+  cursor: pointer;
   background-color: rgb(245, 245, 245);
   font-size: 18px;
   border: none;
@@ -159,6 +162,7 @@ body {
   width: 95%;
 }
 .navBarr .tags2 .secciones .Botones {
+  cursor: pointer;
   background-color: rgb(245, 245, 245);
   font-size: 18px;
   border: none;
@@ -187,6 +191,7 @@ body {
   width: 90%;
 }
 .navBarr .socialMedia .Redes .links {
+  cursor: pointer;
   background-color: rgb(245, 245, 245);
   font-size: 18px;
   border: none;
@@ -208,6 +213,7 @@ body {
   overflow-y: auto;
 }
 .navBarr .popTags .Botones {
+  cursor: pointer;
   background-color: rgb(245, 245, 245);
   font-size: 18px;
   border: none;
@@ -234,4 +240,172 @@ body {
 }
 .navBarr .finalInfo a {
   text-decoration: none;
+}
+
+.Pagina {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1%;
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  align-content: start;
+  justify-content: start;
+}
+
+.Posts {
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 35%;
+}
+.Posts .first {
+  width: 100%;
+}
+.Posts .first .top {
+  font-size: larger;
+}
+.Posts .first .top a {
+  border-radius: 5px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+.Posts .first .top a:hover {
+  background-color: white;
+  color: blue;
+}
+.Posts .fstPost {
+  margin-top: 3%;
+  width: 100%;
+  background-color: white;
+  height: 430px;
+  border-radius: 5px;
+}
+.Posts .fstPost .fstFoto {
+  border-radius: 5px;
+}
+.Posts .fstPost .txtPost {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 10px 30px 10px 30px;
+}
+.Posts .fstPost .txtPost .fotoPerfil {
+  border-radius: 50%;
+  width: 15px;
+  position: relative;
+  left: 20px;
+  top: 15px;
+}
+.Posts .fstPost .txtPost .Logo {
+  position: absolute;
+  border-radius: 10px;
+  width: 30px;
+}
+.Posts .fstPost .txtPost .UserName {
+  bottom: 20px;
+  position: relative;
+  left: 40px;
+}
+.Posts .fstPost .txtPost .UserName a {
+  color: black;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.Posts .fstPost .txtPost .UserName p {
+  font-size: 12px;
+}
+.Posts .fstPost .txtPost .UserName .date {
+  font-size: 10px;
+}
+.Posts .fstPost .PostCont {
+  padding-left: 40px;
+  font-size: large;
+}
+.Posts .fstPost .PostCont a {
+  color: black;
+  text-decoration: none;
+}
+.Posts .fstPost .PostCont a:hover {
+  color: blue;
+}
+.Posts .fstPost .PostCont .tagsPost {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost2 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost2:hover {
+  background-color: rgb(194, 255, 235);
+  color: black;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost3 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost3:hover {
+  background-color: rgb(192, 255, 255);
+  color: black;
+}
+.Posts .fstPost .bottomPst {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+}
+.Posts .fstPost .bottomPst .btmbutton {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones {
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  gap: 5px;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones p {
+  padding-left: 5px;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones .reaccion {
+  border: 1px solid whites;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .fstPost .bottomPst .btmsave {
+  width: 33%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+.Posts .fstPost .bottomPst .btmsave .save {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.Posts .fstPost .bottomPst .btmsave .save:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
 }/*# sourceMappingURL=main.css.map */
