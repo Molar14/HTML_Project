@@ -248,6 +248,7 @@ body {
 .navBarr .finalInfo a {
   text-decoration: none;
 }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -292,6 +293,7 @@ body {
   justify-items: center;
   justify-content: center;
 }
+
 .Posts {
   min-height: 100vh;
   padding-left: 2%;
@@ -692,6 +694,32 @@ body {
 .Posts .thrdPst .bottomPst2 .btmsave .save:hover {
   cursor: pointer;
   background-color: rgb(247, 247, 247);
+}
+
+.contenedor1 {
+  margin-left: 77%;
+  transform: translateY(-504%);
+  padding: 10px;
+  width: 350px;
+  height: 350px;
+  font-size: 9px;
+  text-align: start;
+  border: 1px solid rgb(192, 188, 188);
+  border-radius: 5%;
+  margin-bottom: 40px;
+  line-height: 2.5;
+}
+
+.contenedor2 {
+  padding: 10px;
+  width: 350px;
+  height: 350px;
+  font-size: 9px;
+  text-align: start;
+  border: 1px solid rgb(192, 188, 188);
+  border-radius: 5%;
+  margin-bottom: 20px;
+  line-height: 2.5;
 }
 
 .Pagina {
