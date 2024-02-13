@@ -49,6 +49,7 @@
             list-style: none;
             width: 95%;
             .Botones{
+                cursor: pointer;
                 background-color: rgb(245, 245, 245);
                 font-size: 18px;
                 border: none;
@@ -76,6 +77,7 @@
             list-style: none;
             width: 95%;
             .Botones{
+                cursor: pointer;
                 background-color: rgb(245, 245, 245);
                 font-size: 18px;
                 border: none;
@@ -104,6 +106,7 @@
             flex-direction: row;
             width: 90%;
             .links{
+                cursor: pointer;
                 background-color: rgb(245, 245, 245);
                 font-size: 18px;
                 border: none;
@@ -126,6 +129,7 @@
         flex-direction: column;
         overflow-y: auto;
         .Botones{
+            cursor: pointer;
             background-color: rgb(245, 245, 245);
             font-size: 18px;
             border: none;
