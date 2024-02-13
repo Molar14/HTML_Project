@@ -1,16 +1,20 @@
 .row{
+    
+    border: none;
     display: flex;
     flex-direction: row;
 }
 
 .subContResourcesSD{
+    border: none;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     justify-items: flex-end;
     justify-content: center;
 
     .titleResourcesSD{
+        border: none;
         margin-top: 20px;
         margin-bottom: -20px;
         font-size: 15px;
@@ -19,6 +23,7 @@
 }
 
 .resourcesSD{
+    border: none;
     display: block;
     width: 80%;
     height: 50px;
