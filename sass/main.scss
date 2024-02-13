@@ -8,8 +8,15 @@ body{
     overflow-y: scroll;
     min-height: 100vh;
 }
+
+.row{
+    border:solid rgb(58,24, 124) 1px;
+    display: flex;
+    flex-direction: row;
+}
 @import "navBar";
 @import "sidebar.scss";
+@import "resources.scss";
 @import "postSeccion";
 
 .Pagina{
