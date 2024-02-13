@@ -1,7 +1,10 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
 }
 
 body {
@@ -63,12 +66,13 @@ body {
   gap: 20px;
 }
 .cabeza .barrita .contBarr .account .Create {
+  font-weight: 600;
   text-align: center;
   width: 150px;
   text-decoration: none;
   border: 1px solid blueviolet;
   padding: 15px 15px 15px 15px;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 .cabeza .barrita .contBarr .account .Create:hover {
   background-color: blueviolet;
@@ -80,7 +84,7 @@ body {
   width: 150px;
   text-decoration: none;
   padding: 15px 15px 15px 15px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 .cabeza .barrita .contBarr .account .logIn:hover {
   background-color: rgb(246, 239, 250);
@@ -90,6 +94,12 @@ body {
 .navBarr {
   width: 300px;
   min-height: 100vh;
+}
+.navBarr h2 {
+  font-weight: 900;
+}
+.navBarr h3 {
+  font-weight: 600;
 }
 .navBarr .info {
   line-height: 30px;
@@ -110,11 +120,12 @@ body {
   text-align: center;
 }
 .navBarr .info .Botones .Create {
+  font-weight: 600;
   width: 100%;
   text-decoration: none;
   border: 1px solid blueviolet;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 .navBarr .info .Botones .Create:hover {
   background-color: blueviolet;
@@ -125,7 +136,7 @@ body {
   width: 100%;
   text-decoration: none;
   padding: 10px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 .navBarr .info .Botones .logIn:hover {
   background-color: rgb(252, 253, 255);
@@ -304,6 +315,9 @@ body {
   padding-right: 2%;
   width: 35%;
 }
+.Posts h2 {
+  font-weight: 900;
+}
 .Posts .first {
   width: 100%;
 }
@@ -321,7 +335,7 @@ body {
   color: blue;
 }
 .Posts .fstPost {
-  margin-top: 3%;
+  margin-top: 2%;
   width: 100%;
   background-color: white;
   height: 430px;
@@ -334,7 +348,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 15px;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px 5px 30px;
 }
 .Posts .fstPost .txtPost .fotoPerfil {
   border-radius: 50%;
@@ -700,17 +714,9 @@ body {
   background-color: rgb(247, 247, 247);
 }
 
-.Pagina {
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 1%;
-  display: flex;
-  width: 90%;
-  flex-direction: row;
-  align-content: start;
-  justify-content: start;
+.trentBar H1 {
+  font-weight: 900;
 }
-
 .trentBar .TopTrent {
   display: flex;
   flex-direction: column;
@@ -732,9 +738,6 @@ body {
 .trentBar .TopTrent .Titulo {
   padding: 20px;
   background-color: white;
-}
-.trentBar .TopTrent .Titulo H3 {
-  font-weight: 600;
 }
 .trentBar .TopTrent .Link {
   padding: 20px;
@@ -775,4 +778,15 @@ body {
 }
 .trentBar .TopTrent2 .Link H3 {
   font-weight: lighter;
+}
+
+.Pagina {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1%;
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  align-content: start;
+  justify-content: start;
 }/*# sourceMappingURL=main.css.map */

@@ -45,12 +45,13 @@
   gap: 20px;
 }
 .cabeza .barrita .contBarr .account .Create {
+  font-weight: 600;
   text-align: center;
   width: 150px;
   text-decoration: none;
   border: 1px solid blueviolet;
   padding: 15px 15px 15px 15px;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 .cabeza .barrita .contBarr .account .Create:hover {
   background-color: blueviolet;
@@ -62,7 +63,7 @@
   width: 150px;
   text-decoration: none;
   padding: 15px 15px 15px 15px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 .cabeza .barrita .contBarr .account .logIn:hover {
   background-color: rgb(246, 239, 250);

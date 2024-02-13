@@ -1,0 +1,65 @@
+.trentBar H1 {
+  font-weight: 900;
+}
+.trentBar .TopTrent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+}
+.trentBar .TopTrent p {
+  color: gray;
+  font-size: 12px;
+}
+.trentBar .TopTrent a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.trentBar .TopTrent a:hover {
+  color: blue;
+}
+.trentBar .TopTrent .Titulo {
+  padding: 20px;
+  background-color: white;
+}
+.trentBar .TopTrent .Link {
+  padding: 20px;
+  background-color: white;
+}
+.trentBar .TopTrent .Link H3 {
+  font-weight: lighter;
+}
+.trentBar .TopTrent2 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+}
+.trentBar .TopTrent2 p {
+  color: gray;
+  font-size: 12px;
+}
+.trentBar .TopTrent2 a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.trentBar .TopTrent2 a:hover {
+  color: blue;
+}
+.trentBar .TopTrent2 .Titulo {
+  padding: 20px;
+  background-color: white;
+}
+.trentBar .TopTrent2 .Titulo H3 {
+  font-weight: 600;
+}
+.trentBar .TopTrent2 .Link {
+  padding: 20px;
+  background-color: white;
+}
+.trentBar .TopTrent2 .Link H3 {
+  font-weight: lighter;
+}/*# sourceMappingURL=TrentBar.css.map */
