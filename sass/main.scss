@@ -14,7 +14,17 @@ body{
     display: flex;
     flex-direction: row;
 }
-
 @import "navBar";
 @import "sidebar.scss";
-@import "resources.scss";
+@import "resources.scss";@import "postSeccion";
+
+.Pagina{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 1%;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-content:start;
+    justify-content: start;
+}

@@ -52,6 +52,7 @@
   width: 95%;
 }
 .navBarr .tags .secciones .Botones {
+  cursor: pointer;
   background-color: rgb(245, 245, 245);
   font-size: 18px;
   border: none;
@@ -79,6 +80,7 @@
   width: 95%;
 }
 .navBarr .tags2 .secciones .Botones {
+  cursor: pointer;
   background-color: rgb(245, 245, 245);
   font-size: 18px;
   border: none;
@@ -107,6 +109,7 @@
   width: 90%;
 }
 .navBarr .socialMedia .Redes .links {
+  cursor: pointer;
   background-color: rgb(245, 245, 245);
   font-size: 18px;
   border: none;
@@ -128,6 +131,7 @@
   overflow-y: auto;
 }
 .navBarr .popTags .Botones {
+  cursor: pointer;
   background-color: rgb(245, 245, 245);
   font-size: 18px;
   border: none;
