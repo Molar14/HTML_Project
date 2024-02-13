@@ -248,8 +248,6 @@ body {
 .navBarr .finalInfo a {
   text-decoration: none;
 }
-
-<<<<<<< HEAD
 .row {
   display: flex;
   flex-direction: row;
@@ -293,7 +291,7 @@ body {
   padding: 10px;
   justify-items: center;
   justify-content: center;
-=======
+}
 .Posts {
   min-height: 100vh;
   padding-left: 2%;
@@ -705,5 +703,4 @@ body {
   flex-direction: row;
   align-content: start;
   justify-content: start;
->>>>>>> develop
 }/*# sourceMappingURL=main.css.map */
