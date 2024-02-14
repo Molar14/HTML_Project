@@ -23,6 +23,7 @@
                 @include Center();
                 gap: 10px;
                 .Busqueda{
+                    display: none;
                     width: 400px;
                     height: 40px;
                     border-radius: 50px;
@@ -35,7 +36,6 @@
                 }
             }
             .account{
-                margin-left: 50%;
                 margin-right: 5%;
                 @include Center();
                 align-items: end;
@@ -69,4 +69,14 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 992px){
+
+}
+@media screen and (min-width: 1440px){
+
+}
+@media screen and (min-width: 1980px){
+
 }

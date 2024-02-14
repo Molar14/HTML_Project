@@ -25,6 +25,7 @@
   gap: 10px;
 }
 .cabeza .barrita .contBarr .Logo .Busqueda {
+  display: none;
   width: 400px;
   height: 40px;
   border-radius: 50px;
@@ -36,7 +37,6 @@
   border: 1.5px solid rgb(189, 189, 189);
 }
 .cabeza .barrita .contBarr .account {
-  margin-left: 50%;
   margin-right: 5%;
   display: flex;
   align-items: center;

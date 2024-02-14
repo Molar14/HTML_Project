@@ -46,6 +46,7 @@ body {
   gap: 10px;
 }
 .cabeza .barrita .contBarr .Logo .Busqueda {
+  display: none;
   width: 400px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +58,6 @@ body {
   border: 1.5px solid rgb(189, 189, 189);
 }
 .cabeza .barrita .contBarr .account {
-  margin-left: 50%;
   margin-right: 5%;
   display: flex;
   align-items: center;
@@ -92,6 +92,7 @@ body {
 }
 
 .navBarr {
+  display: none;
   width: 300px;
   min-height: 100vh;
 }
@@ -259,6 +260,9 @@ body {
 .navBarr .finalInfo a {
   text-decoration: none;
 }
+.navBarr .finalInfo #relevante {
+  font-weight: 900;
+}
 
 .row {
   border: none;
@@ -313,7 +317,7 @@ body {
   min-height: 100vh;
   padding-left: 2%;
   padding-right: 2%;
-  width: 35%;
+  width: 85%;
 }
 .Posts h2 {
   font-weight: 900;
@@ -714,6 +718,9 @@ body {
   background-color: rgb(247, 247, 247);
 }
 
+.trentBar {
+  display: none;
+}
 .trentBar H1 {
   font-weight: 900;
 }
@@ -789,4 +796,158 @@ body {
   flex-direction: row;
   align-content: start;
   justify-content: start;
+}
+
+@media screen and (min-width: 768px) {
+  .cabeza {
+    width: 100%;
+  }
+  .cabeza .barrita {
+    padding: 1% 5% 1% 5%;
+  }
+  .cabeza .barrita .contBarr .Logo {
+    gap: 10px;
+  }
+  .cabeza .barrita .contBarr .Logo .Busqueda {
+    display: none;
+    width: 400px;
+    padding-left: 5%;
+  }
+  .cabeza .barrita .contBarr .account {
+    margin-left: 1%;
+    margin-right: 5%;
+    gap: 20px;
+  }
+  .cabeza .barrita .contBarr .account .Create {
+    width: 150px;
+    padding: 15px 15px 15px 15px;
+  }
+  .cabeza .barrita .contBarr .account .logIn {
+    width: 150px;
+    padding: 15px 15px 15px 15px;
+  }
+  .Posts {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 35%;
+  }
+  .Posts .first {
+    width: 100%;
+  }
+  .Posts .fstPost {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .Posts .fstPost .txtPost {
+    padding: 10px 30px 5px 30px;
+  }
+  .Posts .fstPost .txtPost .fotoPerfil {
+    width: 15px;
+    position: relative;
+    left: 20px;
+    top: 15px;
+  }
+  .Posts .fstPost .txtPost .Logo {
+    position: absolute;
+  }
+  .Posts .fstPost .txtPost .UserName {
+    bottom: 20px;
+    position: relative;
+    left: 40px;
+  }
+  .Posts .fstPost .PostCont {
+    padding-left: 40px;
+  }
+  .Posts .fstPost .PostCont .tagsPost .tagPost2 {
+    padding: 10px;
+  }
+  .Posts .fstPost .PostCont .tagsPost .tagPost3 {
+    padding: 10px;
+  }
+  .Posts .fstPost .bottomPst {
+    width: 100%;
+  }
+  .Posts .fstPost .bottomPst .btmbutton {
+    padding-left: 30px;
+    gap: 5px;
+  }
+  .Posts .fstPost .bottomPst .btmbutton .Botones {
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+  }
+  .Posts .fstPost .bottomPst .btmbutton .Botones p {
+    padding-left: 5px;
+  }
+  .Posts .fstPost .bottomPst .btmsave {
+    width: 33%;
+    gap: 15px;
+  }
+  .Posts .scndPst {
+    margin-top: 1%;
+    width: 100%;
+  }
+  .Posts .scndPst .txtPost2 {
+    gap: 10px;
+    padding: 20px 20px 1px 20px;
+  }
+  .Posts .scndPst .txtPost2 .PostCont {
+    padding-left: 55px;
+  }
+  .Posts .scndPst .txtPost2 .bottomPst2 {
+    width: 100%;
+    font-size: 10px;
+  }
+  .Posts .scndPst .txtPost2 .bottomPst2 .btmbutton {
+    padding-left: 55px;
+    gap: 5px;
+  }
+  .Posts .scndPst .txtPost2 .bottomPst2 .btmbutton .Botones {
+    padding: 10px;
+    gap: 5px;
+  }
+  .Posts .scndPst .txtPost2 .bottomPst2 .btmbutton .Botones p {
+    padding-left: 5px;
+  }
+  .Posts .scndPst .txtPost2 .bottomPst2 .btmsave {
+    width: 33%;
+    gap: 15px;
+  }
+  .Posts .thrdPst {
+    margin-top: 1%;
+    width: 100%;
+    height: 200px;
+  }
+  .Posts .thrdPst .txtPost2 {
+    gap: 10px;
+    padding: 20px 20px 1px 20px;
+  }
+  .Posts .thrdPst .txtPost2 .PostCont {
+    padding-left: 55px;
+    font-size: 15px;
+  }
+  .Posts .thrdPst .txtPost2 .PostCont a {
+    color: black;
+    text-decoration: none;
+  }
+  .Posts .thrdPst .txtPost2 .PostCont a:hover {
+    color: blue;
+  }
+  .Posts .thrdPst .txtPost2 .bottomPst2 {
+    width: 100%;
+  }
+  .Posts .thrdPst .txtPost2 .bottomPst2 .btmbutton {
+    padding-left: 55px;
+    gap: 5px;
+  }
+  .Posts .thrdPst .txtPost2 .bottomPst2 .btmbutton .Botones p {
+    padding-left: 5px;
+  }
+  .Posts .thrdPst .txtPost2 .bottomPst2 .btmsave {
+    width: 33%;
+    gap: 15px;
+  }
+  .Posts .thrdPst .txtPost2 .bottomPst2 .btmsave .save {
+    padding: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

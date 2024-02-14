@@ -1,4 +1,5 @@
 .navBarr{
+    display: none;
     h2{
         font-weight: 900;
     }
@@ -163,6 +164,9 @@
         font-size: 15px;
         a{
             text-decoration: none;
+        }
+        #relevante{
+            font-weight: 900;
         }
     }
 }
