@@ -34,22 +34,8 @@ body{
     justify-content: start;
 }
 
-@media screen and (min-width: 992px){
-    .navBarr{
-        display: block;
-    }
-    #q{
-        display: block;
-    }
-    #l{
-        display: block;
-    }
-}
-@media screen and (min-width: 1440px){
-    .trentBar{
-        display:block;
-    }
-}
+@import "responsivas";
+
 
 
 
