@@ -18,7 +18,9 @@
         flex-direction: column;
         justify-content: center;
         .contBarr{
+            width: 100%;
             @include Center();
+            justify-content: space-between;
             .Logo{
                 @include Center();
                 gap: 10px;
@@ -55,6 +57,7 @@
                     }
                 }
                 .logIn{
+                    display:none;
                     text-align: center;
                     width: 150px;
                     text-decoration: none;
