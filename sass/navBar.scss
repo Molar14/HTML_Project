@@ -1,0 +1,85 @@
+@mixin Center(){
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cabeza{
+    z-index: 3;
+    background-color:white;
+    border: 1px solid gainsboro;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    .barrita{
+        position: relative;
+        padding: 1% 5% 1% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .contBarr{
+            width: 100%;
+            @include Center();
+            justify-content: space-between;
+            .Logo{
+                @include Center();
+                gap: 10px;
+                .Busqueda{
+                    display: none;
+                    width: 400px;
+                    height: 40px;
+                    border-radius: 50px;
+                    border: 1px solid gainsboro;
+                    font-size: 15px;
+                    padding-left: 5%;
+                    &:hover{
+                        border: 1.5px solid rgb(189, 189, 189);
+                    }
+                }
+            }
+            .account{
+                margin-right: 5%;
+                @include Center();
+                align-items: end;
+                gap: 20px;
+                .Create{
+                    font-weight: 600;
+                    text-align: center;
+                    width: 150px;
+                    text-decoration: none;
+                    border: 1px solid blueviolet;
+                    padding: 15px 15px 15px 15px;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: blueviolet;
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
+                .logIn{
+                    display:none;
+                    text-align: center;
+                    width: 150px;
+                    text-decoration: none;
+                    padding: 15px 15px 15px 15px;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: rgb(246, 239, 250);
+                        text-decoration: underline;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+
+}
+@media screen and (min-width: 1440px){
+
+}
+@media screen and (min-width: 1980px){
+
+}

@@ -1,0 +1,48 @@
+.row {
+  border: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.subContResourcesSD {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-items: flex-end;
+  justify-content: center;
+}
+.subContResourcesSD .titleResourcesSD {
+  border: none;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.resourcesSD {
+  border: none;
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(64, 64, 64);
+}
+
+.resourcesSD:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(86, 95, 188);
+}
+
+.titleResourcesSD {
+  width: 90%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  justify-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=resources.css.map */

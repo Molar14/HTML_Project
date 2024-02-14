@@ -1,0 +1,405 @@
+.Posts {
+  min-height: 100vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 85%;
+}
+.Posts h2 {
+  font-weight: 900;
+}
+.Posts .first {
+  width: 100%;
+}
+.Posts .first .top {
+  font-size: larger;
+}
+.Posts .first .top a {
+  border-radius: 5px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+.Posts .first .top a:hover {
+  background-color: white;
+  color: blue;
+}
+.Posts .fstPost {
+  margin-top: 2%;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  border-radius: 5px;
+}
+.Posts .fstPost .fstFoto {
+  border-radius: 5px;
+}
+.Posts .fstPost .txtPost {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 10px 30px 5px 30px;
+}
+.Posts .fstPost .txtPost .fotoPerfil {
+  border-radius: 50%;
+  width: 15px;
+  position: relative;
+  left: 20px;
+  top: 15px;
+}
+.Posts .fstPost .txtPost .Logo {
+  position: absolute;
+  border-radius: 10px;
+  width: 30px;
+}
+.Posts .fstPost .txtPost .UserName {
+  bottom: 20px;
+  position: relative;
+  left: 40px;
+}
+.Posts .fstPost .txtPost .UserName a {
+  color: black;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.Posts .fstPost .txtPost .UserName p {
+  font-size: 12px;
+}
+.Posts .fstPost .txtPost .UserName .date {
+  font-size: 10px;
+}
+.Posts .fstPost .PostCont {
+  padding-left: 40px;
+  font-size: large;
+}
+.Posts .fstPost .PostCont a {
+  color: black;
+  text-decoration: none;
+}
+.Posts .fstPost .PostCont a:hover {
+  color: blue;
+}
+.Posts .fstPost .PostCont .tagsPost {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost2 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost2:hover {
+  background-color: rgb(194, 255, 235);
+  color: black;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost3 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost3:hover {
+  background-color: rgb(192, 255, 255);
+  color: black;
+}
+.Posts .fstPost .bottomPst {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  justify-content: space-between;
+}
+.Posts .fstPost .bottomPst .btmbutton {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones {
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones p {
+  padding-left: 5px;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones .reaccion {
+  border: 1px solid whites;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .fstPost .bottomPst .btmsave {
+  width: 33%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+.Posts .fstPost .bottomPst .btmsave .save {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.Posts .fstPost .bottomPst .btmsave .save:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .scndPst {
+  margin-top: 1%;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  border-radius: 5px;
+}
+.Posts .scndPst .txtPost2 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 10px;
+  font-size: 15px;
+  padding: 20px 20px 1px 20px;
+}
+.Posts .scndPst .txtPost2 .profilePic2 .fotoPerfil {
+  border-radius: 50%;
+  width: 30px;
+}
+.Posts .scndPst .txtPost2 .UserName2 a {
+  color: black;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.Posts .scndPst .txtPost2 .UserName2 p {
+  font-size: 12px;
+}
+.Posts .scndPst .txtPost2 .UserName2 .date {
+  font-size: 10px;
+}
+.Posts .scndPst .PostCont {
+  padding-left: 55px;
+  font-size: 15px;
+}
+.Posts .scndPst .PostCont a {
+  color: black;
+  text-decoration: none;
+}
+.Posts .scndPst .PostCont a:hover {
+  color: blue;
+}
+.Posts .scndPst .PostCont .tagsPost {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+.Posts .scndPst .PostCont .tagsPost .tagPost2 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .scndPst .PostCont .tagsPost .tagPost2:hover {
+  background-color: rgb(194, 255, 235);
+  color: black;
+}
+.Posts .scndPst .PostCont .tagsPost .tagPost3 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .scndPst .PostCont .tagsPost .tagPost3:hover {
+  background-color: rgb(192, 255, 255);
+  color: black;
+}
+.Posts .scndPst .bottomPst2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 10px;
+}
+.Posts .scndPst .bottomPst2 .btmbutton {
+  padding-left: 55px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-between;
+}
+.Posts .scndPst .bottomPst2 .btmbutton .Botones {
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  gap: 5px;
+}
+.Posts .scndPst .bottomPst2 .btmbutton .Botones p {
+  padding-left: 5px;
+}
+.Posts .scndPst .bottomPst2 .btmbutton .Botones .reaccion {
+  border: 1px solid whites;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+}
+.Posts .scndPst .bottomPst2 .btmbutton .Botones:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .scndPst .bottomPst2 .btmsave {
+  width: 33%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+.Posts .scndPst .bottomPst2 .btmsave .save {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.Posts .scndPst .bottomPst2 .btmsave .save:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .thrdPst {
+  margin-top: 1%;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  border-radius: 5px;
+}
+.Posts .thrdPst .txtPost2 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 10px;
+  font-size: 15px;
+  padding: 20px 20px 1px 20px;
+}
+.Posts .thrdPst .txtPost2 .profilePic2 .fotoPerfil {
+  border-radius: 50%;
+  width: 30px;
+}
+.Posts .thrdPst .txtPost2 .UserName2 a {
+  color: black;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.Posts .thrdPst .txtPost2 .UserName2 p {
+  font-size: 12px;
+}
+.Posts .thrdPst .txtPost2 .UserName2 .date {
+  font-size: 10px;
+}
+.Posts .thrdPst .PostCont {
+  padding-left: 55px;
+  font-size: 15px;
+}
+.Posts .thrdPst .PostCont a {
+  color: black;
+  text-decoration: none;
+}
+.Posts .thrdPst .PostCont a:hover {
+  color: blue;
+}
+.Posts .thrdPst .PostCont .tagsPost {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+.Posts .thrdPst .PostCont .tagsPost .tagPost2 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .thrdPst .PostCont .tagsPost .tagPost2:hover {
+  background-color: rgb(194, 255, 235);
+  color: black;
+}
+.Posts .thrdPst .PostCont .tagsPost .tagPost3 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .thrdPst .PostCont .tagsPost .tagPost3:hover {
+  background-color: rgb(192, 255, 255);
+  color: black;
+}
+.Posts .thrdPst .bottomPst2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 10px;
+}
+.Posts .thrdPst .bottomPst2 .btmbutton {
+  padding-left: 55px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.Posts .thrdPst .bottomPst2 .btmbutton .Botones {
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  gap: 5px;
+}
+.Posts .thrdPst .bottomPst2 .btmbutton .Botones p {
+  padding-left: 5px;
+}
+.Posts .thrdPst .bottomPst2 .btmbutton .Botones .reaccion {
+  border: 1px solid whites;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+}
+.Posts .thrdPst .bottomPst2 .btmbutton .Botones:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .thrdPst .bottomPst2 .btmsave {
+  width: 33%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+.Posts .thrdPst .bottomPst2 .btmsave .save {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.Posts .thrdPst .bottomPst2 .btmsave .save:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}/*# sourceMappingURL=postSeccion.css.map */
