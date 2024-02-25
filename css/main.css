@@ -1,0 +1,820 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+  overflow-y: scroll;
+  min-height: 100vh;
+}
+
+.row {
+  border: solid rgb(58, 24, 124) 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cabeza {
+  z-index: 3;
+  background-color: white;
+  border: 1px solid gainsboro;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.cabeza .barrita {
+  position: relative;
+  padding: 1% 5% 1% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cabeza .barrita .contBarr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cabeza .barrita .contBarr .Logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.cabeza .barrita .contBarr .Logo .Busqueda {
+  display: none;
+  width: 400px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid gainsboro;
+  font-size: 15px;
+  padding-left: 5%;
+}
+.cabeza .barrita .contBarr .Logo .Busqueda:hover {
+  border: 1.5px solid rgb(189, 189, 189);
+}
+.cabeza .barrita .contBarr .account {
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: end;
+  gap: 20px;
+}
+.cabeza .barrita .contBarr .account .Create {
+  font-weight: 600;
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  border: 1px solid blueviolet;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10px;
+}
+.cabeza .barrita .contBarr .account .Create:hover {
+  background-color: blueviolet;
+  color: white;
+  text-decoration: underline;
+}
+.cabeza .barrita .contBarr .account .logIn {
+  display: none;
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10px;
+}
+.cabeza .barrita .contBarr .account .logIn:hover {
+  background-color: rgb(246, 239, 250);
+  text-decoration: underline;
+}
+
+.navBarr {
+  display: none;
+  width: 300px;
+  min-height: 100vh;
+}
+.navBarr h2 {
+  font-weight: 900;
+}
+.navBarr h3 {
+  font-weight: 600;
+}
+.navBarr .info {
+  line-height: 30px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  background-color: white;
+  padding: 30px;
+}
+.navBarr .info p {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.navBarr .info .Botones {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.navBarr .info .Botones .Create {
+  font-weight: 600;
+  width: 100%;
+  text-decoration: none;
+  border: 1px solid blueviolet;
+  padding: 10px;
+  border-radius: 10px;
+}
+.navBarr .info .Botones .Create:hover {
+  background-color: blueviolet;
+  color: white;
+  text-decoration: underline;
+}
+.navBarr .info .Botones .logIn {
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.navBarr .info .Botones .logIn:hover {
+  background-color: rgb(252, 253, 255);
+  text-decoration: underline;
+}
+.navBarr .tags {
+  list-style: none;
+  padding: 10px 5px 5px 10px;
+  width: 100%;
+}
+.navBarr .tags .secciones {
+  list-style: none;
+  width: 95%;
+}
+.navBarr .tags .secciones .Botones {
+  cursor: pointer;
+  background-color: rgb(245, 245, 245);
+  font-size: 18px;
+  border: none;
+  text-align: start;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navBarr .tags .secciones .Botones:hover {
+  background-color: rgb(239, 231, 255);
+  text-decoration: underline;
+}
+.navBarr h3 {
+  padding: 5px;
+}
+.navBarr .tags2 {
+  list-style: none;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 50px;
+  width: 100%;
+}
+.navBarr .tags2 .secciones {
+  list-style: none;
+  width: 95%;
+}
+.navBarr .tags2 .secciones .Botones {
+  cursor: pointer;
+  background-color: rgb(245, 245, 245);
+  font-size: 18px;
+  border: none;
+  text-align: start;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navBarr .tags2 .secciones .Botones:hover {
+  background-color: rgb(239, 231, 255);
+  text-decoration: underline;
+}
+.navBarr .socialMedia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navBarr .socialMedia .Redes {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+}
+.navBarr .socialMedia .Redes .links {
+  cursor: pointer;
+  background-color: rgb(245, 245, 245);
+  font-size: 18px;
+  border: none;
+  text-align: start;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navBarr .socialMedia .Redes .links:hover {
+  background-color: rgb(239, 231, 255);
+  text-decoration: underline;
+}
+.navBarr .popTags {
+  height: 430px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.navBarr .popTags .Botones {
+  cursor: pointer;
+  background-color: rgb(245, 245, 245);
+  font-size: 18px;
+  border: none;
+  text-align: start;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.navBarr .popTags .Botones:hover {
+  background-color: rgb(239, 231, 255);
+  text-decoration: underline;
+}
+.navBarr .finalInfo {
+  text-align: justify;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 15px;
+}
+.navBarr .finalInfo a {
+  text-decoration: none;
+}
+.navBarr .finalInfo #relevante {
+  font-weight: 900;
+}
+
+.row {
+  border: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.subContResourcesSD {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-items: flex-end;
+  justify-content: center;
+}
+.subContResourcesSD .titleResourcesSD {
+  border: none;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.resourcesSD {
+  border: none;
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(64, 64, 64);
+}
+
+.resourcesSD:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(86, 95, 188);
+}
+
+.titleResourcesSD {
+  width: 90%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.Posts {
+  min-height: 100vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 85%;
+}
+.Posts h2 {
+  font-weight: 900;
+}
+.Posts .first {
+  width: 100%;
+}
+.Posts .first .top {
+  font-size: larger;
+}
+.Posts .first .top a {
+  border-radius: 5px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+.Posts .first .top a:hover {
+  background-color: white;
+  color: blue;
+}
+.Posts .fstPost {
+  margin-top: 2%;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  border-radius: 5px;
+}
+.Posts .fstPost .fstFoto {
+  border-radius: 5px;
+}
+.Posts .fstPost .txtPost {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 10px 30px 5px 30px;
+}
+.Posts .fstPost .txtPost .fotoPerfil {
+  border-radius: 50%;
+  width: 15px;
+  position: relative;
+  left: 20px;
+  top: 15px;
+}
+.Posts .fstPost .txtPost .Logo {
+  position: absolute;
+  border-radius: 10px;
+  width: 30px;
+}
+.Posts .fstPost .txtPost .UserName {
+  bottom: 20px;
+  position: relative;
+  left: 40px;
+}
+.Posts .fstPost .txtPost .UserName a {
+  color: black;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.Posts .fstPost .txtPost .UserName p {
+  font-size: 12px;
+}
+.Posts .fstPost .txtPost .UserName .date {
+  font-size: 10px;
+}
+.Posts .fstPost .PostCont {
+  padding-left: 40px;
+  font-size: large;
+}
+.Posts .fstPost .PostCont a {
+  color: black;
+  text-decoration: none;
+}
+.Posts .fstPost .PostCont a:hover {
+  color: blue;
+}
+.Posts .fstPost .PostCont .tagsPost {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost2 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost2:hover {
+  background-color: rgb(194, 255, 235);
+  color: black;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost3 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .fstPost .PostCont .tagsPost .tagPost3:hover {
+  background-color: rgb(192, 255, 255);
+  color: black;
+}
+.Posts .fstPost .bottomPst {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  justify-content: space-between;
+}
+.Posts .fstPost .bottomPst .btmbutton {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones {
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones p {
+  padding-left: 5px;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones .reaccion {
+  border: 1px solid whites;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+}
+.Posts .fstPost .bottomPst .btmbutton .Botones:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .fstPost .bottomPst .btmsave {
+  width: 33%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+.Posts .fstPost .bottomPst .btmsave .save {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.Posts .fstPost .bottomPst .btmsave .save:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .scndPst {
+  margin-top: 1%;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  border-radius: 5px;
+}
+.Posts .scndPst .txtPost2 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 10px;
+  font-size: 15px;
+  padding: 20px 20px 1px 20px;
+}
+.Posts .scndPst .txtPost2 .profilePic2 .fotoPerfil {
+  border-radius: 50%;
+  width: 30px;
+}
+.Posts .scndPst .txtPost2 .UserName2 a {
+  color: black;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.Posts .scndPst .txtPost2 .UserName2 p {
+  font-size: 12px;
+}
+.Posts .scndPst .txtPost2 .UserName2 .date {
+  font-size: 10px;
+}
+.Posts .scndPst .PostCont {
+  padding-left: 55px;
+  font-size: 15px;
+}
+.Posts .scndPst .PostCont a {
+  color: black;
+  text-decoration: none;
+}
+.Posts .scndPst .PostCont a:hover {
+  color: blue;
+}
+.Posts .scndPst .PostCont .tagsPost {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+.Posts .scndPst .PostCont .tagsPost .tagPost2 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .scndPst .PostCont .tagsPost .tagPost2:hover {
+  background-color: rgb(194, 255, 235);
+  color: black;
+}
+.Posts .scndPst .PostCont .tagsPost .tagPost3 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .scndPst .PostCont .tagsPost .tagPost3:hover {
+  background-color: rgb(192, 255, 255);
+  color: black;
+}
+.Posts .scndPst .bottomPst2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 10px;
+}
+.Posts .scndPst .bottomPst2 .btmbutton {
+  padding-left: 55px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-between;
+}
+.Posts .scndPst .bottomPst2 .btmbutton .Botones {
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  gap: 5px;
+}
+.Posts .scndPst .bottomPst2 .btmbutton .Botones p {
+  padding-left: 5px;
+}
+.Posts .scndPst .bottomPst2 .btmbutton .Botones .reaccion {
+  border: 1px solid whites;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+}
+.Posts .scndPst .bottomPst2 .btmbutton .Botones:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .scndPst .bottomPst2 .btmsave {
+  width: 33%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+.Posts .scndPst .bottomPst2 .btmsave .save {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.Posts .scndPst .bottomPst2 .btmsave .save:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .thrdPst {
+  margin-top: 1%;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  border-radius: 5px;
+}
+.Posts .thrdPst .txtPost2 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 10px;
+  font-size: 15px;
+  padding: 20px 20px 1px 20px;
+}
+.Posts .thrdPst .txtPost2 .profilePic2 .fotoPerfil {
+  border-radius: 50%;
+  width: 30px;
+}
+.Posts .thrdPst .txtPost2 .UserName2 a {
+  color: black;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.Posts .thrdPst .txtPost2 .UserName2 p {
+  font-size: 12px;
+}
+.Posts .thrdPst .txtPost2 .UserName2 .date {
+  font-size: 10px;
+}
+.Posts .thrdPst .PostCont {
+  padding-left: 55px;
+  font-size: 15px;
+}
+.Posts .thrdPst .PostCont a {
+  color: black;
+  text-decoration: none;
+}
+.Posts .thrdPst .PostCont a:hover {
+  color: blue;
+}
+.Posts .thrdPst .PostCont .tagsPost {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+.Posts .thrdPst .PostCont .tagsPost .tagPost2 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .thrdPst .PostCont .tagsPost .tagPost2:hover {
+  background-color: rgb(194, 255, 235);
+  color: black;
+}
+.Posts .thrdPst .PostCont .tagsPost .tagPost3 {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.Posts .thrdPst .PostCont .tagsPost .tagPost3:hover {
+  background-color: rgb(192, 255, 255);
+  color: black;
+}
+.Posts .thrdPst .bottomPst2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 10px;
+}
+.Posts .thrdPst .bottomPst2 .btmbutton {
+  padding-left: 55px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.Posts .thrdPst .bottomPst2 .btmbutton .Botones {
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  gap: 5px;
+}
+.Posts .thrdPst .bottomPst2 .btmbutton .Botones p {
+  padding-left: 5px;
+}
+.Posts .thrdPst .bottomPst2 .btmbutton .Botones .reaccion {
+  border: 1px solid whites;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+}
+.Posts .thrdPst .bottomPst2 .btmbutton .Botones:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.Posts .thrdPst .bottomPst2 .btmsave {
+  width: 33%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
+.Posts .thrdPst .bottomPst2 .btmsave .save {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+.Posts .thrdPst .bottomPst2 .btmsave .save:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+
+.trentBar {
+  display: none;
+}
+.trentBar H1 {
+  font-weight: 900;
+}
+.trentBar .TopTrent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 80%;
+}
+.trentBar .TopTrent p {
+  color: gray;
+  font-size: 12px;
+}
+.trentBar .TopTrent a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.trentBar .TopTrent a:hover {
+  color: blue;
+}
+.trentBar .TopTrent .Titulo {
+  padding: 20px;
+  background-color: white;
+}
+.trentBar .TopTrent .Link {
+  padding: 20px;
+  background-color: white;
+}
+.trentBar .TopTrent .Link H3 {
+  font-weight: lighter;
+}
+.trentBar .TopTrent2 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 80%;
+}
+.trentBar .TopTrent2 p {
+  color: gray;
+  font-size: 12px;
+}
+.trentBar .TopTrent2 a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.trentBar .TopTrent2 a:hover {
+  color: blue;
+}
+.trentBar .TopTrent2 .Titulo {
+  padding: 20px;
+  background-color: white;
+}
+.trentBar .TopTrent2 .Titulo H3 {
+  font-weight: 600;
+}
+.trentBar .TopTrent2 .Link {
+  padding: 20px;
+  background-color: white;
+}
+.trentBar .TopTrent2 .Link H3 {
+  font-weight: lighter;
+}
+
+.Pagina {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 1%;
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  align-content: start;
+  justify-content: start;
+}
+
+@media screen and (min-width: 992px) {
+  .navBarr {
+    display: block;
+  }
+  #q {
+    display: block;
+  }
+  #l {
+    display: block;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .trentBar {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */

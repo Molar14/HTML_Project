@@ -1,0 +1,74 @@
+.cabeza {
+  z-index: 3;
+  background-color: white;
+  border: 1px solid gainsboro;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+.cabeza .barrita {
+  position: relative;
+  padding: 1% 5% 1% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cabeza .barrita .contBarr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cabeza .barrita .contBarr .Logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.cabeza .barrita .contBarr .Logo .Busqueda {
+  display: none;
+  width: 400px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid gainsboro;
+  font-size: 15px;
+  padding-left: 5%;
+}
+.cabeza .barrita .contBarr .Logo .Busqueda:hover {
+  border: 1.5px solid rgb(189, 189, 189);
+}
+.cabeza .barrita .contBarr .account {
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: end;
+  gap: 20px;
+}
+.cabeza .barrita .contBarr .account .Create {
+  font-weight: 600;
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  border: 1px solid blueviolet;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10px;
+}
+.cabeza .barrita .contBarr .account .Create:hover {
+  background-color: blueviolet;
+  color: white;
+  text-decoration: underline;
+}
+.cabeza .barrita .contBarr .account .logIn {
+  display: none;
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10px;
+}
+.cabeza .barrita .contBarr .account .logIn:hover {
+  background-color: rgb(246, 239, 250);
+  text-decoration: underline;
+}/*# sourceMappingURL=navBar.css.map */

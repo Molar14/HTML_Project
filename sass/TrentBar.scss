@@ -1,0 +1,71 @@
+.trentBar{
+    display:none;
+    H1{
+        font-weight:900;
+    }
+    .TopTrent{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 80%;
+        
+        p{
+            color: gray;
+            font-size: 12px;
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: blue;
+            }
+        }
+        .Titulo{
+            
+            padding: 20px;
+            background-color: white;
+        }
+        .Link{
+            padding: 20px;
+            background-color: white;
+            H3{
+                font-weight:lighter;
+            }
+        }
+    }
+    .TopTrent2{
+        margin-top:20px ;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 80%;
+        
+        p{
+            color: gray;
+            font-size: 12px;
+        }
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: blue;
+            }
+        }
+        .Titulo{
+            H3{
+                font-weight: 600;
+            }
+            padding: 20px;
+            background-color: white;
+        }
+        .Link{
+            padding: 20px;
+            background-color: white;
+            H3{
+                font-weight:lighter;
+            }
+        }
+    }
+}

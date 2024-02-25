@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:lighter;
+    font-style:normal;
+}
+body{
+    background-color: rgb(245, 245, 245);
+    overflow-y: scroll;
+    min-height: 100vh;
+}
+
+.row{
+    border:solid rgb(58,24, 124) 1px;
+    display: flex;
+    flex-direction: row;
+}
+@import "navBar";
+@import "sidebar.scss";
+@import "resources.scss";
+@import "postSeccion";
+@import "TrentBar";
+
+.Pagina{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 1%;
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-content:start;
+    justify-content: start;
+}
+
+@import "responsivas";
+
+
+
+
+
+
+
+
+

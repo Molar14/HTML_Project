@@ -1,0 +1,413 @@
+.Posts{
+    h2{
+        font-weight:900;
+    }
+    min-height: 100vh;
+    padding-left:2%;
+    padding-right:2%;
+    width: 85%;
+    .first{
+        width: 100%;
+        .top{
+            font-size: larger;
+            a{
+                border-radius: 5px;
+                color: black;
+                padding: 10px;
+                text-decoration: none;
+                &:hover{
+                    background-color: white;
+                    color: blue
+                }
+            }
+        }
+    }
+    .fstPost{
+        margin-top: 2%;
+        width: 100%;
+        background-color:white;
+        height: auto;
+        border-radius: 5px;
+        .fstFoto{
+            border-radius: 5px;
+        }
+        .txtPost{
+            display: flex;
+            flex-direction: column;
+            font-size: 15px;
+            padding: 10px 30px 5px 30px;
+            .fotoPerfil{
+                border-radius: 50%;
+                width: 15px;
+                position: relative;
+                left: 20px;
+                top: 15px;
+            }
+            .Logo{
+                position: absolute;
+                border-radius: 10px;
+                width: 30px;
+            }
+            .UserName{
+                bottom: 20px;
+                position: relative;
+                left: 40px;
+                a{
+                    color: black;
+                    text-decoration:solid;
+                }
+                p{
+                    font-size: 12px;
+                }
+                .date{
+                    font-size: 10px;
+                }
+            }
+        }
+        .PostCont{
+            padding-left: 40px ;
+            font-size: large;
+            a{
+                color: black;
+                text-decoration: none;
+                &:hover{
+                    color: blue;
+                }
+            }
+            .tagsPost{
+                display: flex;
+                flex-direction: row;
+                font-size: 13px;
+                .tagPost2{
+                    border: none;
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 10px;
+                    &:hover{
+                        background-color: rgb(194, 255, 235);
+                        color: black;
+                    }
+                }
+                .tagPost3{
+                    border: none;
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 10px;
+                    &:hover{
+                        background-color: rgb(192, 255, 255);
+                        color: black;
+                    }
+                }
+            }
+        }
+        .bottomPst{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            font-size: 10px;
+            justify-content: space-between;
+            .btmbutton{
+                padding-left: 30px;
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                .Botones{
+                    font-size: 13px;
+                    border-radius: 10px;
+                    padding: 10px;
+                    border: none;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 5px;
+                    p{
+                        padding-left: 5px;
+                    }
+                    .reaccion{
+                        //position: absolute;
+                        border: 1px solid whites;
+                        background-color: rgb(245, 245, 245);
+                        border-radius: 50%;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(247, 247, 247);
+                    }
+                }
+            }
+            .btmsave{
+                width: 33%;
+                font-size: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: end;
+                gap: 15px;
+                .save{
+                    border-radius: 5px;
+                    padding: 10px;
+                    border: none;
+                    background-color:white;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(247, 247, 247);
+                    }
+                }
+            }
+        }
+    }
+    .scndPst{
+        margin-top: 1%;
+        width: 100%;
+        background-color:white;
+        height: auto;
+        border-radius: 5px;
+        .txtPost2{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 10px;
+            font-size: 15px;
+            padding: 20px 20px 1px 20px;
+            .profilePic2{
+                .fotoPerfil{
+                    border-radius: 50%;
+                    width: 30px;
+                }
+            }
+            .UserName2{
+                a{
+                    color: black;
+                    text-decoration:solid;
+                }
+                p{
+                    font-size: 12px;
+                }
+                .date{
+                    font-size: 10px;
+                }
+            }
+        }
+        .PostCont{
+            padding-left: 55px ;
+            font-size: 15px;
+            a{
+                color: black;
+                text-decoration: none;
+                &:hover{
+                    color: blue;
+                }
+            }
+            .tagsPost{
+                display: flex;
+                flex-direction: row;
+                font-size: 13px;
+                .tagPost2{
+                    border: none;
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 10px;
+                    &:hover{
+                        background-color: rgb(194, 255, 235);
+                        color: black;
+                    }
+                }
+                .tagPost3{
+                    border: none;
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 10px;
+                    &:hover{
+                        background-color: rgb(192, 255, 255);
+                        color: black;
+                    }
+                }
+            }
+        }
+        .bottomPst2{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 10px;
+            .btmbutton{
+                padding-left: 55px;
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                justify-content: space-between;
+                .Botones{
+                    font-size: 13px;
+                    border-radius: 10px;
+                    padding: 10px;
+                    border: none;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: end;
+                    justify-content: end;
+                    gap: 5px;
+                    p{
+                        padding-left: 5px;
+                    }
+                    .reaccion{
+                        //position: absolute;
+                        border: 1px solid whites;
+                        background-color: rgb(245, 245, 245);
+                        border-radius: 50%;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(247, 247, 247);
+                    }
+                }
+            }
+            .btmsave{
+                width: 33%;
+                font-size: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: end;
+                gap: 15px;
+                .save{
+                    border-radius: 5px;
+                    padding: 10px;
+                    border: none;
+                    background-color:white;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(247, 247, 247);
+                    }
+                }
+            }
+        }
+    }
+    .thrdPst{
+        margin-top: 1%;
+        width: 100%;
+        background-color:white;
+        height: auto;
+        border-radius: 5px;
+        .txtPost2{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 10px;
+            font-size: 15px;
+            padding: 20px 20px 1px 20px;
+            .profilePic2{
+                .fotoPerfil{
+                    border-radius: 50%;
+                    width: 30px;
+                }
+            }
+            .UserName2{
+                a{
+                    color: black;
+                    text-decoration:solid;
+                }
+                p{
+                    font-size: 12px;
+                }
+                .date{
+                    font-size: 10px;
+                }
+            }
+        }
+        .PostCont{
+            padding-left: 55px ;
+            font-size: 15px;
+            a{
+                color: black;
+                text-decoration: none;
+                &:hover{
+                    color: blue;
+                }
+            }
+            .tagsPost{
+                display: flex;
+                flex-direction: row;
+                font-size: 13px;
+                .tagPost2{
+                    border: none;
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 10px;
+                    &:hover{
+                        background-color: rgb(194, 255, 235);
+                        color: black;
+                    }
+                }
+                .tagPost3{
+                    border: none;
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 10px;
+                    &:hover{
+                        background-color: rgb(192, 255, 255);
+                        color: black;
+                    }
+                }
+            }
+        }
+        .bottomPst2{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 10px;
+            .btmbutton{
+                padding-left: 55px;
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                .Botones{
+                    font-size: 13px;
+                    border-radius: 10px;
+                    padding: 10px;
+                    border: none;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: end;
+                    justify-content: end;
+                    gap: 5px;
+                    p{
+                        padding-left: 5px;
+                    }
+                    .reaccion{
+                        //position: absolute;
+                        border: 1px solid whites;
+                        background-color: rgb(245, 245, 245);
+                        border-radius: 50%;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(247, 247, 247);
+                    }
+                }
+            }
+            .btmsave{
+                width: 33%;
+                font-size: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: end;
+                gap: 15px;
+                .save{
+                    border-radius: 5px;
+                    padding: 10px;
+                    border: none;
+                    background-color:white;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(247, 247, 247);
+                    }
+                }
+            }
+        }
+    }
+}
